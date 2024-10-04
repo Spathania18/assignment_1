@@ -1,0 +1,27 @@
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Ignore data files (if they are large or not relevant to the repository)
+*.csv
+*.xlsx
+*.json
+
+# Logs
+*.log
+
+# Ignore Jupyter Notebook checkpoints (if you're using Jupyter)
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# IDE-specific files (optional)
+.vscode/
+.idea/
