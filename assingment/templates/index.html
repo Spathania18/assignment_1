@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text App</title>
+</head>
+<body>
+    <h1>Text Classification</h1>
+    <form action="classify" method="POST">
+        {% csrf_token %}
+        <label for="text">Enter Text:</label>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Classify</button>
+    </form>
+
+    <h1>Text Generation</h1>
+    <form action="generate" method="POST">
+        {% csrf_token %}
+        <label for="prompt">Enter Prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
